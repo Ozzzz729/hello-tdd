@@ -9,9 +9,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
             Greeting greeting = new Greeting();
             assertEquals("Hello, World", greeting.sayHello("World"));
         }
+
         @Test
-       public void testHelloNull() {
-           Greeting greeting = new Greeting();
-           assertEquals("Hello, Friend", greeting.sayHello(null));
+        public void testHelloNull() {
+            Greeting greeting = new Greeting();
+            assertEquals("Hello, Friend", greeting.sayHello(null));
         }
     }
