@@ -1,6 +1,13 @@
-@Test
-void testHelloBasic() {
-    Greeting greeting = new Greeting();
-    String result = greeting.sayHello(name: "World");
-    assertEquals(expected: "Hello, Universe", result);  // เปลี่ยนค่า expected เป็น "Hello, Universe"
+package com.example;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class GreetingTest {
+
+    @Test
+    public void testHelloBasic() {
+        Greeting greeting = new Greeting();
+        assertEquals("Hello, World", greeting.sayHello("World"));
+    }
 }
